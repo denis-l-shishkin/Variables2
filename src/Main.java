@@ -34,37 +34,37 @@ public class Main {
         System.out.println(varShort22);
         System.out.println(varByte2);
         System.out.println("--End of task 2--\n");
-        byte pupilOfLudmila = 23;
-        byte pupilOfAnna = 27;
-        byte pupilOfEkaterina = 30;
-        short totalSheets = 480;
+        int pupilOfLudmila = 23;
+        int pupilOfAnna = 27;
+        int pupilOfEkaterina = 30;
+        int totalSheets = 480;
         System.out.println("На каждого ученика рассчитано " + (totalSheets / (pupilOfLudmila + pupilOfAnna + pupilOfEkaterina)) + " листов бумаги.");
         System.out.println("--End of task 3--\n");
-        byte efficiencyPerMinute = 8; //16 bottles per 2 minutes
-        byte minutesPerHour = 60;
-        byte hoursPerDay = 24;
-        byte daysPerMonth = 30;
-        byte periodOfTime2 = 1; //1 day
-        byte periodOfTime3 = 3; //3 days
-        byte periodOfTime4 = 1; //1 month
-        byte periodOfTime1Minutes = 20; //20 minutes
-        short periodOfTime2Minutes = (short) (periodOfTime2 * hoursPerDay * minutesPerHour); //1 day
-        short periodOfTime3Minutes = (short) (periodOfTime3 * hoursPerDay * minutesPerHour); //3 days
+        int efficiencyPerMinute = 8; //16 bottles per 2 minutes
+        int minutesPerHour = 60;
+        int hoursPerDay = 24;
+        int daysPerMonth = 30;
+        int periodOfTime2 = 1; //1 day
+        int periodOfTime3 = 3; //3 days
+        int periodOfTime4 = 1; //1 month
+        int periodOfTime1Minutes = 20; //20 minutes
+        int periodOfTime2Minutes = periodOfTime2 * hoursPerDay * minutesPerHour; //1 day
+        int periodOfTime3Minutes = periodOfTime3 * hoursPerDay * minutesPerHour; //3 days
         int periodOfTime4Minutes = (periodOfTime4 * daysPerMonth * hoursPerDay * minutesPerHour); //1 month
-        short outputPerTime1 = (short) (periodOfTime1Minutes * efficiencyPerMinute);
-        short outputPerTime2 = (short) (periodOfTime2Minutes * efficiencyPerMinute);
-        int outputPerTime3 = (periodOfTime3Minutes * efficiencyPerMinute);
-        int outputPerTime4 = (periodOfTime4Minutes * efficiencyPerMinute);
+        int outputPerTime1 = periodOfTime1Minutes * efficiencyPerMinute;
+        int outputPerTime2 = periodOfTime2Minutes * efficiencyPerMinute;
+        int outputPerTime3 = periodOfTime3Minutes * efficiencyPerMinute;
+        int outputPerTime4 = periodOfTime4Minutes * efficiencyPerMinute;
         System.out.println("За 20 минут машина произвела " + outputPerTime1 + " штук бутылок.");
         System.out.println("За сутки машина произвела " + outputPerTime2 + " штук бутылок.");
         System.out.println("За 3 дня машина произвела " + outputPerTime3 + " штук бутылок.");
         System.out.println("За месяц машина произвела " + outputPerTime4 + " штук бутылок.");
         System.out.println("--End of task 4--\n");
-        byte totalPaint = 120;
-        byte usedWhitePaint = 2; //for one classroom
-        byte usedBrownPaint = 4; //for one classroom
-        byte totalUsedPaint = (byte) (usedWhitePaint + usedBrownPaint); //for one classroom
-        byte totalClassroom = (byte) (totalPaint / totalUsedPaint);
+        int totalPaint = 120;
+        int usedWhitePaint = 2; //for one classroom
+        int usedBrownPaint = 4; //for one classroom
+        int totalUsedPaint = usedWhitePaint + usedBrownPaint; //for one classroom
+        int totalClassroom = totalPaint / totalUsedPaint;
         System.out.println("В школе, где " + totalClassroom + " классов, нужно " + (totalClassroom * usedWhitePaint) + " банок белой краски и " + (totalClassroom * usedBrownPaint) + " банок коричневой краски.");
         System.out.println("--End of task 5--\n");
         System.out.println("""
